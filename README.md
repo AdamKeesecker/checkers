@@ -1,6 +1,6 @@
 # client-template
 
-Serves as a template for client JavaScript applications.
+This is a lame checkers game where you play against yourself
 
 It uses:
 * Jade
