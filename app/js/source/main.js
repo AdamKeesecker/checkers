@@ -4,8 +4,8 @@
   $(document).ready(init);
 
   var playerTurn;
-  var player1=1;
-  var player2=2;
+  var player1;
+  var player2;
   var currentPlayer;
 
 
@@ -14,6 +14,7 @@
     addSpace();
     setUpBoard();
     $('.validSpace').click(selectPiece);
+    $('#reset').click(reset);
   }
 
   function selectPiece(){
@@ -43,11 +44,11 @@
     for(i=20; i<32; i++){
       $(spaces[i]).addClass('player1');
     }
-
-
-
   }
 
+  function reset(){
+
+  }
 
 
 
