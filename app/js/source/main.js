@@ -8,7 +8,7 @@
   function init() {
     addSpaces();
     setupBoard();
-
+    $('#reset').click(resetilize);
     $('#board').on('click','.piece.current', selectPiece);
     $('#board').on('click','td:not(.piece)', checkSpace);
   }
@@ -40,6 +40,28 @@
       $('.player2').removeClass('current');
       $('.player1').addClass('current');
     }
+    if(isEndOfGame()){
+      if($('.player1').length > $('.player2').length){
+        alert('Player 1 wins! Death to the rebels.');
+      }
+      else{
+        alert('Player 2 wins! The empire has fallen.');
+      }
+    }
+  }
+
+  function isEndOfGame(){
+// if($!('.player1').length || $!('.player2').length)
+    if($('.player1').length===0 || $('.player2').length===0){
+      if($('.player1').length > $('.player2').length){
+        alert('Player 1 wins! Death to the rebels.');
+      }
+      else{
+        alert('Player 2 wins! The empire has fallen.');
+      }
+      return true;
+    }
+    return false;
   }
 
   function selectPiece() {
@@ -123,6 +145,13 @@
     $('tr:nth-child(2n-1) td:nth-child(2n)').addClass('validSpace');
   }
 
+  function resetilize(){
+    var u=confirm('Are you sure you would like to reset?');
+    if(u===true){
+      $('td').removeClass('player1 player2 piece selected king current');
+      setupBoard();
+    }
+  }
 
 
 })();
