@@ -9,16 +9,17 @@ html(lang='en')
     link(rel='stylesheet', href='./css/app.css')
   body
     h1 Checkers
-    button.button-small#reset RESET
-    .pure-g
+    .pure-g#page
       .pure-u-1-3
+        button.button-secondary#reset RESET
       .pure-u-1-3
-        table#table
-          tbody
-            -for(var i=0; i<8; i++)
-              tr
-                -for(var j=0; j<8; j++)
-                  td(data-x=i, data-y=j)
+        #container2
+          table#board
+            tbody
+              -for(var i=0; i<8; i++)
+                tr
+                  -for(var j=0; j<8; j++)
+                    td(data-x=i, data-y=j)
 
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/source/main.js')
