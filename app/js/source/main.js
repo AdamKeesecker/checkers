@@ -153,5 +153,64 @@
     }
   }
 
-
+  // function isDoubleJump(x, y, offY){
+  //   var topLeft = [x-1, y-1];
+  //   var topRight = [x+1, y-1];
+  //   var bottomLeft = [x-1, y+1];
+  //   var bottomRight = [x+1, y+1];
+  //
+  //   if($('.selected').hasClass('player1')){
+  //     if ((offY > 0 || isKing()) && isOppPiece(topLeft[0], topLeft[1], 'player2') && !$('td[data-x='+(x-2)+'][data-y='+(y-2)+']').hasClass('piece')){
+  //       captured(topLeft[0], topLeft[1]);
+  //       move('td[data-x='+ (x-2) +'][data-y='+ (y-2) +']');
+  //       $('td[data-x='+x+'][data-y='+y+']').removeClass('player2 piece king current selected');
+  //       if (y-2 === 0){
+  //         $('td[data-x='+(x-2)+'][data-y='+(y-2)+']').addClass('king');
+  //       }
+  //     } else if ((offY > 0 || isKing()) && isOppPiece(topRight[0], topRight[1], 'player2') && !$('td[data-x='+(x+2)+'][data-y='+(y-2)+']').hasClass('piece')){
+  //       captured(topRight[0], topRight[1]);
+  //       move('td[data-x='+ (x+2) +'][data-y='+ (y-2) +']');
+  //       $('td[data-x='+x+'][data-y='+y+']').removeClass('player2 piece king current selected');
+  //       if (y-2 === 0){
+  //         $('td[data-x='+(x+2)+'][data-y='+(y-2)+']').addClass('king');
+  //       }
+  //     } else if (isKing() && isOppPiece(bottomLeft[0], bottomLeft[1], 'player2') && !$('td[data-x='+(x-2)+'][data-y='+(y+2)+']').hasClass('piece')){
+  //         captured(bottomLeft[0], bottomLeft[1]);
+  //         move('td[data-x='+ (x-2) +'][data-y='+ (y+2) +']');
+  //         $('td[data-x='+x+'][data-y='+y+']').removeClass('player2 piece king current selected');
+  //     } else if (isKing() && isOppPiece(bottomRight[0], bottomRight[1], 'player2') && !$('td[data-x='+(x+2)+'][data-y='+(y+2)+']').hasClass('piece')){
+  //         captured(bottomRight[0], bottomRight[1]);
+  //         move('td[data-x='+ (x+2) +'][data-y='+ (y+2) +']');
+  //         $('td[data-x='+x+'][data-y='+y+']').removeClass('player2 piece king current selected');
+  //     }
+  //   }
+  //   if($('.selected').hasClass('player2')){
+  //     if (isKing() && isOppPiece(topLeft[0], topLeft[1], 'player1') && !$('td[data-x='+(x-2)+'][data-y='+(y-2)+']').hasClass('piece')){
+  //       captured(topLeft[0], topLeft[1]);
+  //       move('td[data-x='+ (x-2) +'][data-y='+ (y-2) +']');
+  //       $('td[data-x='+x+'][data-y='+y+']').removeClass('player1 piece king current selected');
+  //     } else if (isKing() && isOppPiece(topRight[0], topRight[1], 'player1') && !$('td[data-x='+(x+2)+'][data-y='+(y-2)+']').hasClass('piece')){
+  //       captured(topRight[0], topRight[1]);
+  //       move('td[data-x='+ (x+2) +'][data-y='+ (y-2) +']');
+  //       $('td[data-x='+x+'][data-y='+y+']').removeClass('player1 piece king current selected');
+  //     } else if ((offY < 0 || isKing()) && isOppPiece(bottomLeft[0], bottomLeft[1], 'player1') && !$('td[data-x='+(x-2)+'][data-y='+(y+2)+']').hasClass('piece')){
+  //         captured(bottomLeft[0], bottomLeft[1]);
+  //         move('td[data-x='+ (x-2) +'][data-y='+ (y+2) +']');
+  //         $('td[data-x='+x+'][data-y='+y+']').removeClass('player1 piece king current selected');
+  //         if (y+2 === 7){
+  //           $('td[data-x='+(x-2)+'][data-y='+(y+2)+']').addClass('king');
+  //         }
+  //     } else if ((offY < 0 || isKing()) && isOppPiece(bottomRight[0], bottomRight[1], 'player1') && !$('td[data-x='+(x+2)+'][data-y='+(y+2)+']').hasClass('piece')){
+  //         captured(bottomRight[0], bottomRight[1]);
+  //         move('td[data-x='+ (x+2) +'][data-y='+ (y+2) +']');
+  //         $('td[data-x='+x+'][data-y='+y+']').removeClass('player1 piece king current selected');
+  //       if (y+2 === 7){
+  //         $('td[data-x='+(x+2)+'][data-y='+(y+2)+']').addClass('king');
+  //       }
+  //     }
+  //   }
+  //
+  //
+  //
+  // }
 })();
